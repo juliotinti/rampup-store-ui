@@ -1,0 +1,50 @@
+.container {
+  width: 100vw;
+  height: 87vh;
+}
+
+.return {
+  margin-top: 1rem;
+}
+
+.card {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  width: 45vw;
+}
+
+.order-name-price {
+  margin-left: 0.5rem;
+  display: flex;
+}
+
+.name {
+  font-size: 11px;
+  font-weight: bold;
+  width: 15vw;
+}
+
+.unit-price {
+  width: 20vw;
+  font-size: 11px;
+}
+
+.quantity {
+  width: 10vw;
+  font-size: 11px;
+}
+
+.order-discount-total-price {
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.discount {
+  width: 23vw;
+  font-size: 11px;
+}
+
+.total-price {
+  font-size: 14px;
+  font-weight: bold;
+}

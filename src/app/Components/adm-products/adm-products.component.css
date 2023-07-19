@@ -1,0 +1,26 @@
+.container {
+  align-items: start;
+  margin: 3vh 0vw 5vh 0.8vw;
+  width: 80vw;
+  height: 83vh;
+}
+
+.table {
+  width: 80vw;
+  height: 61vh;
+}
+
+.pagination {
+  display: flex;
+}
+
+.header-container {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.remove-icon {
+  color: rgb(240, 16, 16);
+  margin-left: 1.3rem;
+  cursor: pointer;
+}

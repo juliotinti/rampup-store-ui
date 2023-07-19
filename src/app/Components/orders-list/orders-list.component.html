@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Your orders</h2>
+  <div class="all-orders">
+    <app-order *ngFor="let order of orders" [order]="order"></app-order>
+  </div>
+  <div class="pagination">
+    <mat-paginator
+      [length]="100"
+      [pageSize]="2"
+      aria-label="Select page"
+      (page)="onPaginateChange($event)"
+    >
+    </mat-paginator>
+  </div>
+</div>

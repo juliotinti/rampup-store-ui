@@ -1,0 +1,18 @@
+<div class="container">
+  <li class="ind-ticket">
+    <div class="col-min">{{ ticket.instant | date : "short" }}</div>
+    <div class="col-min">{{ ticket.id }}</div>
+    <div class="col-min">{{ ticket.order.id }}</div>
+    <div class="col-max">{{ ticket.message }}</div>
+    <div class="col-min">{{ ticket.solved ? "Solved" : "Unsolved" }}</div>
+    <div class="col-min">
+      <button
+        class="btn btn-danger"
+        (click)="solve()"
+        [disabled]="ticket.solved"
+      >
+        Solve
+      </button>
+    </div>
+  </li>
+</div>

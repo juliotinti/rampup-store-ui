@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="order-content" margin="5px">
+    <div class="order-header">
+      <div class="col-md-9">
+        <p class="request-date">REQUEST DATE:</p>
+        <p class="date">
+          {{ order.instant | date : "short" }}
+        </p>
+      </div>
+      <div class="col-md-4">
+        <p class="order-id">ORDER ID: {{ order.id }}</p>
+      </div>
+    </div>
+    <div class="order-sum-up">
+      <img
+        style="clear: right"
+        src="assets\logo-backwhite.svg"
+        height="35rem"
+        alt=""
+      />
+      <div class="order-name">
+        <a [routerLink]="[order.id]"> View order detail </a>
+      </div>
+      <div class="order-buttons">
+        <button class="button-21" role="button" (click)="openTicket(order.id)">
+          Open Ticket
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

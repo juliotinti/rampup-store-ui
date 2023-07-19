@@ -1,0 +1,60 @@
+h2 {
+  font-size: 26px;
+  margin: 15px;
+  text-align: start;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.all-tickets {
+  height: 55vh;
+}
+
+.tickets-header {
+  background-color: #ccdde4;
+  width: 67vw;
+  font-weight: bold;
+  display: flex;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.col1 {
+  width: 7vw;
+  margin: 7px;
+  text-align: center;
+}
+
+.col2 {
+  width: 7vw;
+  margin: 7px;
+  text-align: center;
+}
+
+.col3 {
+  width: 7vw;
+  margin: 7px;
+  text-align: center;
+}
+
+.col4 {
+  width: 39vw;
+  margin: 7px;
+  text-align: center;
+}
+
+.col5 {
+  width: 7vw;
+  margin: 7px;
+  text-align: center;
+}
+
+.pagination {
+  flex-direction: column;
+  margin-left: 2.8rem;
+  bottom: auto;
+}

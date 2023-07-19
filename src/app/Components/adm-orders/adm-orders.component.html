@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="table">
+    <table mat-table [dataSource]="orders" class="mat-elevation-z8">
+      <ng-container matColumnDef="moment">
+        <th mat-header-cell *matHeaderCellDef>Date</th>
+        <td mat-cell *matCellDef="let order">
+          {{ order.moment | date : "short" }}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let order">{{ order.id }}</td>
+      </ng-container>
+      <ng-container matColumnDef="customerId">
+        <th mat-header-cell *matHeaderCellDef>Customer ID</th>
+        <td mat-cell *matCellDef="let order">{{ order.customerId }}</td>
+      </ng-container>
+      <ng-container matColumnDef="deliveryId">
+        <th mat-header-cell *matHeaderCellDef>Address ID</th>
+        <td mat-cell *matCellDef="let order">{{ order.deliveryId }}</td>
+      </ng-container>
+      <ng-container matColumnDef="detail">
+        <th mat-header-cell *matHeaderCellDef>Detail</th>
+        <td mat-cell *matCellDef="let order">
+          <a [routerLink]="[order.id]" class="see-more-icon"
+            ><mat-icon>announcement</mat-icon></a
+          >
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+  <div class="pagination">
+    <mat-paginator
+      [length]="120"
+      [pageSize]="6"
+      aria-label="Select page"
+      (page)="onPaginateChange($event)"
+    ></mat-paginator>
+  </div>
+</div>

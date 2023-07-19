@@ -1,0 +1,36 @@
+<div class="container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Personal info</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list class="data">
+        <mat-list-item
+          >Name
+          <small>{{ customer.customerName }}</small>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item
+          >Email <small>{{ customer.user.email }}</small></mat-list-item
+        >
+        <mat-divider></mat-divider>
+        <mat-list-item
+          >Doc. Number
+          <small>{{
+            customer.documentNumber | mask : "000.000.000"
+          }}</small></mat-list-item
+        >
+        <mat-divider></mat-divider>
+        <mat-list-item
+          >Credit Score <small>{{ customer.creditScore }}</small></mat-list-item
+        >
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <button class="button-21" role="button" (click)="editPersonalInfo()">
+            Edit
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+</div>

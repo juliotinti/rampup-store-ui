@@ -1,0 +1,18 @@
+.sidebar-nav {
+  overflow: hidden;
+  position: fixed;
+  width: 18%;
+  height: 100%;
+  left: 0;
+}
+
+.bottom-section {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sidebar-nav a:hover {
+  background: #ddd;
+  color: black;
+}

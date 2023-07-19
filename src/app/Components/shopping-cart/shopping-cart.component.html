@@ -1,0 +1,69 @@
+<div mat-dialog-content>
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>Shopping Cart</mat-card-title>
+    </mat-card-header>
+
+    <mat-list *ngFor="let item of products">
+      <div class="order">
+        <div class="name">
+          <mat-list style="margin-left: 1rem">{{ item.productName }}</mat-list>
+        </div>
+        <div class="quantity">
+          <mat-list>Quantity: {{ item.quantity }} </mat-list>
+        </div>
+        <div class="value">
+          <mat-list> Total Price - {{ item.totalPrice | currency }} </mat-list>
+        </div>
+        <div class="remove-item">
+          <mat-list>
+            <a (click)="removeProduct(item.orderItem)" class="remove-icon"
+              ><mat-icon>remove_shopping_cart</mat-icon></a
+            >
+          </mat-list>
+        </div>
+      </div>
+      <mat-divider></mat-divider>
+    </mat-list>
+    <mat-list>
+      <div class="addresses">
+        <mat-form-field class="full-width">
+          <mat-label>Choose the delivery address</mat-label>
+          <mat-select class="address-select">
+            <mat-option
+              class="full-width"
+              value="valid"
+              (click)="selectAddress(address)"
+              *ngFor="let address of customerAddresses"
+              >{{ address.street }}, {{ address.houseNumber }} ({{
+                address.zipCode | mask : "00000-000"
+              }})</mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </mat-list>
+    <mat-list>
+      <div class="below-card">
+        <button
+          mat-button
+          mat-dialog-close
+          class="btn btn-outline-success"
+          style="margin-left: 2rem"
+        >
+          Close
+        </button>
+        <button
+          mat-button
+          mat-dialog-close
+          class="btn btn-success"
+          (click)="makeOrder()"
+          style="margin-left: 5px"
+        >
+          Order
+        </button>
+      </div>
+    </mat-list>
+    <br />
+  </mat-card>
+</div>

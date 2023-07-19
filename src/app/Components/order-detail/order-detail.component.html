@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="return">
+    <a routerLink="/orders" *ngIf="!isAdmin">Return to order list</a>
+    <a routerLink="/admin/orders" *ngIf="isAdmin">Return to order list</a>
+  </div>
+  <div class="card">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Order detail</mat-card-title>
+        <mat-card-subtitle>
+          Order {{ order.id }} - {{ order.instant | date : "short" }} ||
+          {{ order.deliveryAddress.street }},
+          {{ order.deliveryAddress.houseNumber }},
+          {{ order.deliveryAddress.neighborhood }}
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <mat-list *ngFor="let item of order.items">
+          <div class="order">
+            <div class="order-name-price">
+              <div class="name">
+                <mat-list>{{ item.id.productOffering.productName }}</mat-list>
+              </div>
+              <div class="unit-price">
+                <mat-list
+                  >Unit Price -
+                  {{ item.id.productOffering.unitPrice | currency }}</mat-list
+                >
+              </div>
+              <div class="quantity">
+                <mat-list>Quantity - {{ item.quantity }}</mat-list>
+              </div>
+            </div>
+            <div class="order-discount-total-price">
+              <div class="discount">
+                <mat-list>Discount - {{ item.discount | percent }}</mat-list>
+              </div>
+              <div class="total-price">
+                <mat-list>
+                  Total Price - {{ item.totalPrice | currency }}
+                </mat-list>
+              </div>
+            </div>
+          </div>
+          <mat-divider></mat-divider>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

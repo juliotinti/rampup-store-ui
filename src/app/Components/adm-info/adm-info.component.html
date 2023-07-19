@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="header">
+    <mat-card class="info-card">
+      <div class="information">
+        <h6>Orders made:</h6>
+        <h1>{{ ordersInfo.ordersQuantity }}</h1>
+      </div>
+    </mat-card>
+    <mat-card class="info-card">
+      <div class="information">
+        <h6>Orders cancelled:</h6>
+        <h1>{{ ordersInfo.cancelledOrdersQuantity }}</h1>
+      </div>
+    </mat-card>
+    <mat-card class="info-card">
+      <div class="information">
+        <h6>All products:</h6>
+        <h1>{{ prodInfo.allProducts }}</h1>
+      </div>
+    </mat-card>
+    <mat-card class="info-card">
+      <div class="information">
+        <h6>Products to sale:</h6>
+        <h1>{{ prodInfo.productsToSale }}</h1>
+      </div>
+    </mat-card>
+  </div>
+  <div class="content">
+    <ngx-charts-bar-vertical
+      [view]="[900, 380]"
+      [results]="chartData"
+      [xAxis]="true"
+      [yAxis]="true"
+      [showXAxisLabel]="true"
+      [showYAxisLabel]="true"
+      [xAxisLabel]="'Product Name'"
+      [yAxisLabel]="'Sold Quantity'"
+    ></ngx-charts-bar-vertical>
+  </div>
+</div>

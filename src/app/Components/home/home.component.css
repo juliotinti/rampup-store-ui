@@ -1,0 +1,13 @@
+.container {
+  width: 100vw;
+  height: 87vh;
+  display: flex;
+}
+
+.customer-container {
+  width: 35vw;
+}
+
+.addresses-container {
+  width: 45vw;
+}

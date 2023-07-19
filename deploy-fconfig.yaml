@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-rampup-final
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend-rampup-final
+  template:
+    metadata:
+      labels:
+        app: frontend-rampup-final
+    spec:
+      containers:
+        - name: frontend-rampup-final
+          image: front:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80

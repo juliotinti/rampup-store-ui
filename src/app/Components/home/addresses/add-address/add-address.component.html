@@ -1,0 +1,95 @@
+<div class="container">
+  <h1 mat-dialog-title>Add a new address</h1>
+  <div mat-dialog-content>
+    <div class="form">
+      <form #addressForm="ngForm">
+        <div class="form-group">
+          <label for="street">Street</label>
+          <input
+            id="street"
+            class="form-control"
+            ngModel
+            name="street"
+            required
+            [(ngModel)]="address.street"
+          />
+        </div>
+        <div class="form-group">
+          <label for="houseNumber">House Number</label>
+          <input
+            id="houseNumber"
+            class="form-control"
+            ngModel
+            name="houseNumber"
+            required
+            [(ngModel)]="address.houseNumber"
+          />
+        </div>
+        <div class="form-group">
+          <label for="neighborhood">Neighborhood</label>
+          <input
+            id="neighborhood"
+            class="form-control"
+            ngModel
+            name="neighborhood"
+            required
+            [(ngModel)]="address.neighborhood"
+          />
+        </div>
+        <div class="form-group">
+          <label for="zipCode">Zip Code</label>
+          <input
+            id="zipCode"
+            class="form-control"
+            ngModel
+            name="zipCode"
+            mask="00000-000"
+            required
+            [(ngModel)]="address.zipCode"
+          />
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input
+            type="text"
+            id="country"
+            class="form-control"
+            ngModel
+            name="country"
+            required
+            [(ngModel)]="address.country"
+          />
+        </div>
+        <div class="form-group">
+          <label for="address-type">Type</label>
+          <select
+            class="form-control"
+            id="address-type"
+            required
+            (change)="onSelect($event.target.value)"
+          >
+            <option selected value="HomeAddress">Home Address</option>
+            <option value="BusinessAddress">Business Address</option>
+            <option value="ShippingAddress">Shipping Address</option>
+          </select>
+        </div>
+        <div mat-dialog-actions>
+          <button mat-button mat-dialog-close class="btn btn-outline-success">
+            Close
+          </button>
+          <button
+            mat-button
+            mat-dialog-close
+            class="btn btn-success"
+            type="submit"
+            [disabled]="!addressForm.valid"
+            (click)="submitForm()"
+            style="margin-left: 5px"
+          >
+            Add
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

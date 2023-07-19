@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="display">
+    <div class="navbar-brand">
+      <a routerLink="/home">
+        <img
+          style="clear: right"
+          src="assets\logo-colored.svg"
+          width="100%"
+          height="48rem"
+          alt=""
+        />
+      </a>
+    </div>
+    <div class="button">
+      <a
+        class="shopping-cart"
+        (click)="toShoppingCart()"
+        mode="over"
+        position="end"
+      >
+        <mat-icon
+          [matBadgeDisabled]="false"
+          [matBadge]="itemsQuantity()"
+          matBadgeColor="warn"
+        >
+          shopping_cart
+        </mat-icon>
+      </a>
+    </div>
+  </div>
+</div>

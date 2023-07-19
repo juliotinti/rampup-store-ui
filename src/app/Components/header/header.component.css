@@ -1,0 +1,32 @@
+.container {
+  top: 0;
+  width: 100vw;
+  height: 75px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  left: 0;
+  position: fixed;
+}
+
+.display {
+  width: 98vw;
+  display: flex;
+}
+
+.navbar-brand {
+  align-items: start;
+  height: 75px;
+}
+
+.button {
+  margin-top: 25px;
+  width: 50px;
+  height: 50px;
+  margin-left: 82vw;
+}
+
+.shopping-cart {
+  color: black;
+  cursor: pointer;
+}

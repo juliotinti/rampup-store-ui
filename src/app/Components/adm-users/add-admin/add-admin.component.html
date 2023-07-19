@@ -1,0 +1,87 @@
+<div class="container">
+  <h1 mat-dialog-title>Add a new admin</h1>
+  <div mat-dialog-content>
+    <div class="form">
+      <form #userForm="ngForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            ngModel
+            name="email"
+            required
+            email
+            [(ngModel)]="user.email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            ngModel
+            name="password"
+            required
+            [(ngModel)]="user.password"
+            [(ngModel)]="customer.password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            class="form-control"
+            ngModel
+            name="name"
+            required
+            [(ngModel)]="customer.customerName"
+          />
+        </div>
+        <div class="form-group">
+          <label for="document-number">Document Number</label>
+          <input
+            id="document-number"
+            class="form-control"
+            ngModel
+            name="document-number"
+            required
+            mask="000.000.000"
+            [(ngModel)]="customer.documentNumber"
+          />
+        </div>
+        <div class="form-group">
+          <label for="customer-type">Type</label>
+          <select
+            class="form-control"
+            id="customer-type"
+            required
+            (change)="onSelect($event.target.value)"
+          >
+            <option selected value="Technical">Technical</option>
+            <option value="NaturalPerson">Natural Person</option>
+            <option value="LegalPerson">Legal Person</option>
+          </select>
+        </div>
+        <div mat-dialog-actions>
+          <button mat-button mat-dialog-close class="btn btn-outline-success">
+            Close
+          </button>
+          <button
+            mat-button
+            mat-dialog-close
+            class="btn btn-success"
+            type="submit"
+            [disabled]="!userForm.valid"
+            (click)="submitForm()"
+            style="margin-left: 5px"
+          >
+            Add
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

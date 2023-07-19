@@ -1,0 +1,50 @@
+<div class="container">
+  <h1 mat-dialog-title>Edit your personal info</h1>
+  <div mat-dialog-content>
+    <div class="form">
+      <form #customerForm="ngForm">
+        <div class="form-group">
+          <label for="customer-name">Customer Name</label>
+          <input
+            type="text"
+            id="customer-name"
+            class="form-control"
+            ngModel
+            name="customer-name"
+            required
+            [(ngModel)]="customer.customerName"
+          />
+        </div>
+        <div class="form-group">
+          <label for="customer-type">Customer Type</label>
+          <select
+            class="form-control"
+            id="customer-type"
+            required
+            (change)="onSelect($event.target.value)"
+          >
+            <option selected value="LegalPerson">Legal Person</option>
+            <option value="NaturalPerson">Natural Person</option>
+            <option value="Technical">Technical</option>
+          </select>
+        </div>
+        <div mat-dialog-actions>
+          <button mat-button mat-dialog-close class="btn btn-outline-success">
+            Close
+          </button>
+          <button
+            mat-button
+            mat-dialog-close
+            type="submit"
+            class="btn btn-success"
+            [disabled]="!customerForm.valid"
+            (click)="submitForm()"
+            style="margin-left: 5px"
+          >
+            Edit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

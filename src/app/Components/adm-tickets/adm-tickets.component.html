@@ -1,0 +1,27 @@
+<div class="container">
+  <ul class="tickets-table">
+    <li class="tickets-header">
+      <div class="col1">Date</div>
+      <div class="col2">Ticket Id</div>
+      <div class="col3">Order Id</div>
+      <div class="col4">Ticket Message</div>
+      <div class="col5">Status</div>
+      <div class="col6">Solve</div>
+    </li>
+  </ul>
+  <div class="all-tickets">
+    <app-adm-ticket
+      *ngFor="let ticket of tickets"
+      [ticket]="ticket"
+    ></app-adm-ticket>
+  </div>
+  <div class="pagination">
+    <mat-paginator
+      [length]="100"
+      [pageSize]="4"
+      aria-label="Select page"
+      (page)="onPaginateChange($event)"
+    >
+    </mat-paginator>
+  </div>
+</div>

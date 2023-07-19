@@ -1,0 +1,105 @@
+<div class="container">
+  <div class="authorizationForm mat-elevation-z8">
+    <div class="logo-imagem-container">
+      <img
+        style="clear: right"
+        src="assets\logo-colored.svg"
+        width="100%"
+        height="48rem"
+        alt=""
+      />
+    </div>
+    <div class="form">
+      <form #authForm="ngForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            ngModel
+            name="email"
+            required
+            email
+            [(ngModel)]="user.email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            ngModel
+            name="password"
+            required
+            [(ngModel)]="user.password"
+            [(ngModel)]="customer.password"
+          />
+        </div>
+        <div class="form-group" *ngIf="!isLoginMode">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            class="form-control"
+            ngModel
+            name="name"
+            required
+            [(ngModel)]="customer.customerName"
+          />
+        </div>
+        <div class="form-group" *ngIf="!isLoginMode">
+          <label for="document-number">Document Number</label>
+          <input
+            id="document-number"
+            class="form-control"
+            ngModel
+            name="document-number"
+            required
+            mask="000.000.000"
+            [(ngModel)]="customer.documentNumber"
+          />
+        </div>
+        <div class="form-group" *ngIf="!isLoginMode">
+          <label for="customer-type">Type</label>
+          <select
+            class="form-control"
+            id="customer-type"
+            required
+            (change)="onSelect($event.target.value)"
+          >
+            <option selected value="LegalPerson">Legal Person</option>
+            <option value="NaturalPerson">Natural Person</option>
+            <option value="Technical">Technical</option>
+          </select>
+        </div>
+        <div class="buttons">
+          <button
+            class="btn btn-primary"
+            type="submit"
+            [disabled]="!authForm.valid"
+            (click)="submitForm()"
+          >
+            {{ isLoginMode ? "Login" : "Sign Up" }}
+          </button>
+          |
+          <button
+            class="btn btn-primary"
+            type="button"
+            (click)="onSwitchMode()"
+          >
+            Switch to {{ isLoginMode ? "Sign Up" : "Login" }}
+          </button>
+        </div>
+      </form>
+      <div class="alert alert-danger" *ngIf="error" style="margin-top: 1rem">
+        <p>{{ error }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" *ngIf="showSpinner">
+    <div class="spinner">
+      <app-loading-spinner></app-loading-spinner>
+    </div>
+  </div>
+</div>

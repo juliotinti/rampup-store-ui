@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="customer-container">
+    <app-customer [customer]="customer"></app-customer>
+  </div>
+  <div class="addresses-container">
+    <app-addresses [addresses]="customer.addresses"></app-addresses>
+    <app-delete-account></app-delete-account>
+  </div>
+</div>

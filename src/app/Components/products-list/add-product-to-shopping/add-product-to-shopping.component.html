@@ -1,0 +1,39 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title>Product - {{ product.productName }}</mat-card-title>
+    <mat-card-subtitle>{{ product.unitPrice | currency }}</mat-card-subtitle>
+  </mat-card-header>
+  <div class="form">
+    <form #prodForm="ngForm">
+      <div class="quantity">
+        <a
+          (click)="removeQtd()"
+          style="cursor: pointer; color: black; margin-top: 5px"
+          ><mat-icon>remove</mat-icon></a
+        >
+        <h3 style="margin: 5px">{{ item.quantity }}</h3>
+        <a
+          (click)="addQtd()"
+          style="cursor: pointer; color: black; margin-top: 5px"
+          ><mat-icon>add</mat-icon></a
+        >
+      </div>
+      <div mat-dialog-actions>
+        <button mat-button mat-dialog-close class="btn btn-outline-success">
+          Close
+        </button>
+        <button
+          mat-button
+          mat-dialog-close
+          class="btn btn-success"
+          type="submit"
+          [disabled]="!prodForm.valid"
+          (click)="submitForm()"
+          style="margin-left: 5px"
+        >
+          Add to shopping
+        </button>
+      </div>
+    </form>
+  </div>
+</mat-card>

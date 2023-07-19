@@ -1,0 +1,32 @@
+.card {
+  width: 60vw;
+}
+
+.order {
+  display: flex;
+  width: 55vw;
+}
+
+.name {
+  width: 20vw;
+}
+
+.quantity {
+  width: 15vw;
+}
+
+.value {
+  width: 20vw;
+}
+
+.remove-icon {
+  width: 5vw;
+  color: rgb(240, 16, 16);
+  margin-left: 1.3rem;
+  cursor: pointer;
+}
+
+.full-width {
+  margin-left: 10px;
+  width: 30vw;
+}

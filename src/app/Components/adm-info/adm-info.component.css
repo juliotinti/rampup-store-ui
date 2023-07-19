@@ -1,0 +1,36 @@
+.container {
+  margin-left: 0px;
+  height: 87vh;
+  width: 82vw;
+}
+
+.header {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  width: 78vw;
+}
+
+.info-card {
+  width: 16vw;
+}
+
+.information h6 {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.information h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.content {
+  margin-top: 10px;
+  height: 64vh;
+  width: 78vw;
+}

@@ -1,0 +1,14 @@
+h2 {
+  font-size: 26px;
+  margin: 15px;
+  text-align: start;
+}
+
+.container {
+  width: 100vw;
+  height: 87vh;
+}
+
+.all-orders {
+  height: 65vh;
+}
