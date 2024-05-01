@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+
+  api:
+    image: juliotinti/store-api:latest
+    container_name: store-api
+    networks:
+      - storeNet
+    ports: 
+      - "8080:8080"
+
+  ui:
+    image: juliotinti/store-frontend:latest
+    container_name: store-frontend
+    networks:
+      - storeNet
+    ports: 
+      - "4200:80"
+
+networks:
+  storeNet:
+    driver: bridge
