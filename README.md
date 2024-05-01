@@ -32,11 +32,11 @@ OR
 
 Login page:
 
-<p align="center"> <img src="https://postimg.cc/SjdPBcJK" width="400" height="600"/> </p>
+<p align="center"> <img src="https://freeimage.host/i/JgOKren" width="400" height="600"/> </p>
 
 Sign Up page:
 
-<p align="center"> <img src="https://postimg.cc/MvbG2P1Q" width="300"/> </p>
+<p align="center"> <img src="https://freeimage.host/i/JgOfY7t" width="300"/> </p>
 
 Home page:
 
