@@ -32,51 +32,107 @@ OR
 
 Login page:
 
-<p align="center"> <img src="https://iili.io/Jg8yKAu.md.png" width="400" height="600"/> </p>
+<p align="center"> <img src="https://iili.io/Jg8yKAu.md.png" width="600"/> </p>
 
 Sign Up page:
 
-<p align="center"> <img src="https://freeimage.host/i/JgOfY7t" width="300"/> </p>
+<p align="center"> <img src="https://iili.io/JgOfY7t.png" width="600"/> </p>
 
-Home page:
+[OPERATOR] Home page:
 
-<p align="center"> <img src="https://postimg.cc/646B9wr4" width="600"/> </p>
+<p align="center"> <img src="https://iili.io/JgSdV14.png" width="600"/> </p>
 
-Home page - Edit personal Info: 
+[OPERATOR] Home page - Edit personal Info: 
 
-<p align="center"> <img src="https://postimg.cc/KkqHM2XM" width="600"/> </p>
+<p align="center"> <img src="https://iili.io/JgSdbEv.png" width="600"/> </p>
 
-Home page - Add new address: 
+[OPERATOR] Home page - Add new address: 
 
-<p align="center"> <img src="https://postimg.cc/TLMwvZNn" width="600"/> </p>
+<p align="center"> <img src="https://iili.io/JgS37DX.png" width="600"/> </p>
 
-Home page - Delete account: 
+[OPERATOR] Home page - Delete account: 
 
-<p align="center"> <img src="https://postimg.cc/qtdgCNy9" width="600"/> </p>
+<p align="center"> <img src="https://iili.io/JgS3ssa.png" width="600"/> </p>
 
-Product page: 
+[OPERATOR] Product page: 
 
-<p align="center"> <img src="https://postimg.cc/7JSWhQ4v" width="600"/> </p>
+<p align="center"> <img src="https://iili.io/JgSKujt.png" width="600"/> </p>
 
-Product page - Purchase button: 
+[OPERATOR] Product page - Purchase button: 
 
-<p align="center"> <img src="https://postimg.cc/Xp7P4LPP" width="600"/> </p>
+<p align="center"> <img src="https://iili.io/JgSKv9V.png" width="600"/> </p>
 
-When add to shopping cart:
+[OPERATOR] When add to shopping cart:
 
-<p align="center"> <img src="https://postimg.cc/gXgvDVKw" width="200"/> </p>
+<p align="center"> <img src="https://iili.io/JgSKZ9p.png" width="200"/> </p>
 
-Product page - Shopping cart button clicked: 
+[OPERATOR] Product page - Shopping cart button clicked: 
 
-<p align="center"> <img src="https://postimg.cc/PCd5tgHj" width="600"/> </p>
+<p align="center"> <img src="https://iili.io/JgSf9Ps.png" width="600"/> </p>
 
-Shopping cart popup - Choose the delivery address: 
+[OPERATOR] Shopping cart popup - Choose the delivery address: 
 
-<p align="center"> <img src="https://postimg.cc/hJkFGmmd" width="600"/> </p>
+<p align="center"> <img src="https://iili.io/JgSfnVe.png" width="600"/> </p>
 
-Ticket page: 
+[OPERATOR] Order page: 
 
-<p align="center"> <img src="https://postimg.cc/5Ym6qfbn" width="600"/> </p>
+<p align="center"> <img src="https://iili.io/JgSfcWF.png" width="600"/> </p>
+
+[OPERATOR] Order page - View order detail: 
+
+<p align="center"> <img src="https://iili.io/JgSfwxt.png" width="600"/> </p>
+
+[OPERATOR] Order page - Open ticket: 
+
+<p align="center"> <img src="https://iili.io/JgSfPz7.png" width="600"/> </p>
+
+[OPERATOR] Ticket page: 
+
+<p align="center"> <img src="https://iili.io/JgSqqdv.png" width="600"/> </p>
+
+[ADMIN] Manage Products: 
+
+<p align="center"> <img src="https://iili.io/JgSqLTN.png" width="600"/> </p>
+
+[ADMIN] Manage Products - Add product: 
+
+<p align="center"> <img src="https://iili.io/JgSB08v.png" width="600"/> </p>
+
+[ADMIN] Manage Products - Remove: 
+
+<p align="center"> <img src="https://iili.io/JgSBOcG.png" width="600"/> </p>
+
+[ADMIN] Manage Users: 
+
+<p align="center"> <img src="https://iili.io/JgSB4V9.png" width="600"/> </p>
+
+[ADMIN] Manage Users - Add admin: 
+
+<p align="center"> <img src="https://iili.io/JgSCJKg.png" width="600"/> </p>
+
+[ADMIN] Manage Users - Remove: 
+
+<p align="center"> <img src="https://iili.io/JgSCCxI.png" width="600"/> </p>
+
+[ADMIN] Orders: 
+
+<p align="center"> <img src="https://iili.io/JgSCaxS.png" width="600"/> </p>
+
+[ADMIN] Orders - Detail: 
+
+<p align="center"> <img src="https://iili.io/JgSCVJj.png" width="600"/> </p>
+
+[ADMIN] Manage Tickets: 
+
+<p align="center"> <img src="https://iili.io/JgSCUdJ.png" width="600"/> </p>
+
+[ADMIN] Manage Tickets - Solve: 
+
+<p align="center"> <img src="https://iili.io/JgSnqdb.png" width="600"/> </p>
+
+[ADMIN] Informations: 
+
+<p align="center"> <img src="https://iili.io/JgSnakv.png" width="600"/> </p>
 
 ## Contributing
 We welcome contributions from the open-source community. If you would like to contribute to MemoMed, please follow these steps:
