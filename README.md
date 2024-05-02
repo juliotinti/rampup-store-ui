@@ -32,7 +32,7 @@ OR
 
 Login page:
 
-<p align="center"> <img src="https://freeimage.host/i/JgOKren.jpg" width="400" height="600"/> </p>
+<p align="center"> <img src="https://iili.io/Jg8yKAu.md.png" width="400" height="600"/> </p>
 
 Sign Up page:
 
