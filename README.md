@@ -16,9 +16,8 @@ This repository contains the frontend application for the Rampup platform, devel
    ```bash
    git clone https://github.com/juliotinti/rampup-store-ui.git
 2. npm install -g @angular/cli
-3. Acesse o diretório onde foi clonado: npm install
-4. ng serve
-5. Just access http://localhost:4200/
+3. Go to where you've cloned, then: npm install ; ng serve
+4. Just access http://localhost:4200/
 
 OR
 
