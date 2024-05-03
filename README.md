@@ -134,7 +134,7 @@ Sign Up page:
 <p align="center"> <img src="https://iili.io/JgSnakv.png" width="600"/> </p>
 
 ## Contributing
-We welcome contributions from the open-source community. If you would like to contribute to MemoMed, please follow these steps:
+We welcome contributions from the open-source community. If you would like to contribute to this, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch: `git checkout -b feature/your-feature`
